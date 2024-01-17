@@ -9,7 +9,7 @@ $prime_light: #F5E9EA
 $prime: #DA2B36
 $black: #292D2F
 
-html, body 
+html, body
     background: #F7F7F8
     font-family: 'Akzidenz Grotesk', sans-serif
     color: $black
@@ -89,7 +89,7 @@ mark
         color: $prime
         img
             display: block
-        &:hover 
+        &:hover
             box-shadow: 0 0 0 2px rgba($prime, .4)
 
     &_lk
@@ -125,3 +125,7 @@ ul
 .on_mob
     @media screen and ( min-width: 1000px )
         display: none
+
+@media screen and (max-width: 991px)
+    .container
+        max-width: 786px
