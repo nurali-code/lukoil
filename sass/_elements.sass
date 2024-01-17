@@ -38,9 +38,12 @@ h1,.h1
     margin: 0 0 24px
 
 h2,.h2
-    font-size: 32px
+    font-size: 40px
     font-weight: 500
-    margin-bottom: 32px
+    line-height: 120%
+    letter-spacing: -0.6px
+    text-transform: uppercase
+    margin: 0 0 30px
 
 section
     padding: 35px 0
@@ -70,11 +73,25 @@ mark
 
 .btn
     display: inline-block
-    padding: 16px 31px
-    font-size: 14px
+    padding: 24px 107px 24px 37px
+    font-size: 16px
     font-style: normal
     font-weight: 600
-    text-align: center
+    border-radius: 70px
+    background: linear-gradient(122deg, #DA2B36 2.53%, #B8232C 69.33%)
+    color: white
+    position: relative
+    z-index: 1
+    text-align: left
+    &:after
+        content: url(../img/arrow_45.svg)
+        position: absolute
+        right: 32px
+        top: 50%
+        transform: translateY(-50%)
+        border-left: 1px solid rgba(255, 255, 255, 0.19)
+        padding-left: 30px
+
     &:hover
         box-shadow: 0 0 0 2px rgba($prime, .4)
     &_circ
@@ -83,14 +100,24 @@ mark
         font-style: normal
         font-weight: 600
         display: inline-block
+        border-radius: 70px
         padding: 16px 30px
         background-color: $prime_light
-        border-radius: 70px
         color: $prime
         img
             display: block
         &:hover
             box-shadow: 0 0 0 2px rgba($prime, .4)
+
+    &_card
+        border: 1px solid rgba(255, 255, 255, 0.34)
+        background: rgba(255, 255, 255, 0.20)
+        backdrop-filter: blur(4px)
+        &::after
+            width: 23px
+            right: 24px
+            height: 24px
+            content: url('../img/card_chip.svg')
 
     &_lk
         padding: 16px
@@ -98,11 +125,12 @@ mark
 input, select
     appearance: none
     border-radius: 12px
-    border: 1px solid rgba(36, 36, 36, 0.07)
-    height: 50px
+    border-radius: 70px
+    background-color: #F7F7F8
+    height: 70px
     display: block
+    font-size: 16px
     width: 100%
-    margin-bottom: 16px
     color: #000
     padding: 0 18px
     &:placeholder
@@ -114,18 +142,91 @@ select
     background-position: center right 18px
     background-size: 20px auto
 
-.fx
+.fx, .fx-wrp
     display: flex
     justify-content: space-between
     align-items: center
 
+.fx-wrp
+    align-items: flex-start
+    flex-wrap: wrap
+
 ul
     list-style: none
 
-.on_mob
-    @media screen and ( min-width: 1000px )
-        display: none
+.inp
+    &-phone
+        position: relative
+        &::before
+            // content: url('../img/phone_gray.svg')
+            content: ''
+            position: absolute
+            left: 25px
+            width: 22px
+            height: 22px
+            display: block
+            top: 50%
+            transform: translateY(-50%)
+            padding-right: 25px
+            z-index: 1
+            border-right: 1px solid rgba(35, 49, 73, 0.2)
+            background-image: url('../img/phone_gray.svg')
+            background-repeat: no-repeat
+            background-position: left center
 
-@media screen and (max-width: 991px)
+        input
+            padding: 24px 20px 24px 100px
+
+.checkbox
+    display: block
+    position: relative
+    span
+        color: #8792a4
+        font-weight: 400
+        font-size: 12px
+        padding-left: 45px
+        line-height: 129.5%
+        display: block
+        a
+            color: #8792a4
+            font-weight: 600
+            text-decoration: underline
+
+        &:before
+            content: ''
+            position: absolute
+            width: 32px
+            height: 32px
+            border-radius: 50%
+            left: 0
+            top: 50%
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: #E3EFFF
+            transition: .3s
+            transform: translateY(-50%)
+            background-repeat: no-repeat
+            background-position: center center
+            background-size: 50% auto
+
+    input
+        width: 32px
+        height: 32px
+        position: absolute
+        top: 0
+        left: 0
+        opacity: 0
+        &:checked ~ span
+            &::before
+                background-image: url('../img/check.svg')
+
+@media screen and (max-width: 998px)
     .container
         max-width: 786px
+
+    h2, .h2
+        font-size: 24px
+
+    input, select
+        font-size: 14px

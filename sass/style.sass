@@ -6,14 +6,256 @@
 @import 'modal'
 
 .hero
-    
 
+.online
+    padding: 0 10px 0
+    .container
+        position: relative
+        top: 40px
+        border-radius: 30px
+        background: #FFF
+        padding: 30px 49px
+        background-image: url('../img/online__bg.jpg')
+        background-repeat: no-repeat
+        background-position: right -80px bottom 50px
+        background-size: 350px auto
 
+    &__text
+        width: 481px
+        font-size: 18px
+        line-height: 129.5%
+        margin: 5px auto 70px
 
+    h2, .col
+        width: 45%
 
+    &-item
+        font-size: 16px
+        font-weight: 400
+        line-height: 129.5%
+        margin: 0 0 44px
+        width: 46%
+        img
+            width: 44px
+            height: 44px
+            object-fit: contain
+            margin: 0 0 18px
+            display: block
 
+    &-card
+        width: 456px
+        margin: 0 auto
+        padding: 42px 44px
+        color: white
+        border-radius: 30px
+        background: #DA2B36
+        p
+            margin-bottom: 64px
 
+    @media screen and ( max-width: 998px )
+        .container
+            padding: 30px 20px 30px 30px
+            background-size: 290px auto
+            background-position: right -80px bottom -50px
 
+        .btn
+            font-size: 14px
+            padding: 18px 95px 18px 29px
 
-    
+        .col
+            width: 50%
+
+        &-item
+            font-size: 14px
+
+        h2
+            margin-bottom: 10px
+
+        &__text
+            margin: 0 0 40px
+
+        &-card
+            padding: 20px 35px 40px
+            width: 330px
+            margin: 0 0 0 auto
+            align-self: flex-end
+            p
+                font-size: 16px
+                margin-bottom: 50px
+
+        @media screen and ( max-width: 700px )
+            padding: 70px 8px
+            .container
+                top: 0
+                padding: 32px 16px
+
+            &__text 
+                font-size: 14px
+                margin-bottom: 32px
+
+            h2, .col
+                width: 100%
+
+            &-card
+                width: 100%
+
+            &-item
+                order: 3
+                margin: 0 auto 
+                width: 43%
+                margin-bottom: 31px
+
+                &:nth-child(2)
+                    order: 2
+                &:last-of-type
+                    order: 1
+
+            &-card 
+                padding: 32px
+                p 
+                    margin-bottom: 38px
+
+.ask
+    background-color: #292D2F
+    color: white
+    padding: 0
+    overflow: hidden
+    .container
+        padding-top: 105px
+        padding-bottom: 80px
+        position: relative
+        z-index: 1
+        align-items: flex-start
+
+    h2
+        margin-bottom: 18px
+
+    &__manager
+        display: inline-block
+        font-size: 16px
+        line-height: 129.5%
+        background-color: rgba(255, 255, 255, 0.12)
+        border: 1px solid rgba(255, 255, 255, 0.34)
+        backdrop-filter: blur(4px)
+        border-radius: 70px
+        align-self: center
+        margin: auto 0 70px 0
+        padding: 20px 31px
+        position: absolute
+        bottom: 12%
+        left: 14%
+        b
+            font-size: 18px
+            display: block
+
+        i
+            font-style: normal
+
+        &:after
+            content: url(../img/ask_info.svg)
+            position: absolute
+            top: -20px
+            right: 0
+
+    .col
+        width: 310px
+
+    picture
+        display: inline
+
+    &__bg
+        position: absolute
+        bottom: 0
+        max-height: 90%
+        object-fit: contain
+        max-width: 45%
+        left: 42%
+        transform: translateX(-50%)
+        z-index: -1
+        display: block
+
+    &-form
+        margin: 0 0 0 auto
+        border-radius: 30px
+        background: #FFF
+        padding: 41px 34px
+        width: 448px
+        color: $black
+        &__heading
+            font-size: 18px
+            font-weight: 400
+            line-height: 129.5%
+            margin: 0 0 41px
+
+        small
+            margin-bottom: 19px
+            display: block
+            color: #8792A4
+            font-weight: 400
+            line-height: 129.5%
+
+    .btn
+        width: 100%
+        margin: 20px auto 25px
+
+    @media screen and ( max-width: 1100px )
+        &__bg
+            left: 38%
+
+    @media screen and ( max-width: 998px )
+        .col
+            width: 50%
+
+        h2, p
+            max-width: 170px
+
+        &-form
+            width: 370px
+
+        &__bg
+            left: 29%
+            max-width: 60%
+
+        &__manager
+            bottom: 25%
+            left: 24px
+            i
+                display: none
+
+    @media screen and ( max-width: 700px )
+        .container
+            display: block
+            padding: 32px 8px
+
+        h2, p
+            max-width: 100%
+        .col
+            width: 100%
+            padding: 0 16px
+            margin-bottom: 410px
+
+        &__bg
+            max-width: 380px
+            bottom: 43%
+            left: 43%
+            transform: scaleX(-1) translateX(50%)
+
+        &-form
+            max-width: 100%
+            margin: 0 auto
+
+        &__manager
+            bottom: auto
+            top: 27%
+            left: auto
+            right: 24px
+            font-size: 14px
+            padding: 17px 30px
+            b
+                font: 16px
+
+            &:after
+                top: 46px
+                left: -25px
+
 @import 'footer'
