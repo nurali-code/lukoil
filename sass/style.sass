@@ -1,11 +1,356 @@
 @import 'normolize'
 @import 'elements'
-@import 'header'
 @import 'fonts'
-@import 'slick'
-@import 'modal'
+@import 'header'
+// @import 'slick'
 
 .hero
+
+.pa
+    padding: 60px 10px 0
+    h2
+        margin-bottom: 30px
+
+    .container
+        padding: 32px 50px
+        color: white
+        border-radius: 30px
+        background: linear-gradient(103deg, #33373A 26.05%, #1D2022 67.06%)
+
+    h2, &__text
+        max-width: 50%
+
+    &__text
+        font-size: 16px
+        font-weight: 400
+        line-height: 129.5%
+        margin: 0 0 46px
+
+    ul
+        max-width: 54%
+        li
+            padding-left: 33px
+            font-size: 16px
+            font-weight: 600
+            line-height: 129.5%
+            width: 31%
+            background-image: url('../img/list_dark.svg')
+            &:first-child
+                width: 164px
+
+    &__img
+        position: absolute
+        height: 95%
+        width: 48%
+        object-fit: contain
+        object-position: right bottom
+        bottom: 0
+        right: 0
+        z-index: -1
+
+    @media screen and ( max-width: 1200px )
+        &__text, h2
+            max-width: 53%
+
+        &__img
+            width: 47%
+
+        ul
+            display: block
+            li
+                width: 100% !important
+
+    @media screen and ( max-width: 998px )
+        h2
+            margin-bottom: 20px
+
+        .container
+            padding: 32px 40px 80px
+
+        &__text, h2
+            max-width: 100%
+
+        &__text
+            margin-bottom: 80px
+
+        &__img
+            height: 58%
+
+    @media screen and ( max-width: 700px )
+        padding: 35px 6px
+        .container
+            padding: 32px 16px 68vw
+
+        &__text
+            margin-bottom: 40px
+
+        ul
+            max-width: 100%
+
+        &__img
+            width: 100%
+            height: 65vw
+            max-width: 100%
+
+.manage
+    .container
+        align-items: stretch
+
+    &__img
+        border-radius: 30px
+        object-fit: cover
+
+    .col
+        background-color: white
+        border-radius: 30px
+        overflow: hidden
+        margin-bottom: 20px
+
+    li
+        font-weight: 400
+        line-height: 129.5%
+        letter-spacing: -0.24px
+
+    h2
+        margin-bottom: 42px
+
+    &-header
+        background-color: $prime
+        color: white
+        padding: 39px 36px 14px
+
+    &-bottom
+        padding: 30px 36px 14px
+
+    @media screen and ( min-width: 998px )
+        .container
+            flex-direction: row-reverse
+        .col,
+        &__img
+            max-width: 49%
+            margin: 0
+
+    @media screen and ( max-width: 998px )
+        h2
+            margin-bottom: 20px
+
+    @media screen and ( max-width: 700px )
+        &__img
+            aspect-ratio: 4/4.5
+        &-header
+            padding: 32px 16px 1px
+
+        &-bottom
+            padding: 10px 16px 16px
+
+.control
+    padding: 60px 0 120px
+    .container
+        gap: 40px 0
+        justify-content: space-between
+
+    h2
+        align-self: flex-start
+
+    p
+        justify-content: flex-start
+        font-size: 16px
+        font-weight: 400
+        line-height: normal
+        display: inline-flex
+        max-width: 23%
+        gap: 14px
+        img
+            display: block
+            width: 44px
+            min-width: 44px
+
+    @media screen and ( max-width: 1150px )
+        h2
+            width: 100%
+            margin-bottom: 0
+
+        p
+            width: 30%
+            max-width: 30%
+
+    @media screen and ( max-width: 998px )
+        p
+            width: 49%
+            max-width: 49%
+
+    @media screen and ( max-width: 700px )
+        padding: 35px 0 70px
+        h2
+            margin-bottom: 4px
+        .container
+            gap: 16px
+        p
+            width: 100%
+            max-width: 100%
+
+.possibility
+    background-color: #292D2F
+    color: white
+    padding: 0
+    .container
+        position: relative
+        z-index: 1
+        padding: 87px 24px 0
+
+    .col
+        width: 48%
+
+    h2
+        margin-bottom: 32px
+
+    &__subtext
+        font-size: 24px
+        font-weight: 600
+        line-height: 124%
+        margin: 0 0 24px
+        max-width: 90%
+
+    &__text
+        margin-bottom: 40px
+        max-width: 90%
+
+    &-items
+        gap: 20px 4%
+        align-items: stretch
+
+    &-item
+        width: 48%
+        border-radius: 30px
+        overflow: hidden
+        span
+            background-color: white
+            padding: 25px 70px 23px 32px
+            display: block
+            color: $black
+            position: relative
+            z-index: 1
+            min-height: 95px
+            &::after
+                content: ''
+                position: absolute
+                width: 30px
+                height: 30px
+                border-radius: 50%
+                right: 24px
+                top: 22px
+                display: flex
+                align-items: center
+                justify-content: center
+                background-color: $prime_light
+                transition: .3s
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: 50% auto
+                background-image: url('../img/check.svg')
+
+        img
+            display: block
+            width: 100%
+            object-fit: cover
+            height: 190px
+
+    &-title
+        @media screen and ( min-width: 998px )
+            flex-direction: column
+            align-items: flex-start
+
+    &__bg
+        display: block
+        margin-top: auto
+        max-width: 90%
+        object-fit: contain
+        object-position: center bottom
+
+    @media screen and ( max-width: 998px )
+        background: linear-gradient(103deg, #33373A 26.05%, #1D2022 67.06%)
+        .container
+            padding-bottom: 100px
+        .col
+            width: 100%
+
+        &__subtext
+            font-size: 18px
+            margin-bottom: 16px
+            max-width: 100%
+
+        &__text
+            font-size: 16px
+            max-width: 100%
+
+        &-items
+            gap: 1.5%
+            width: 100%
+
+        &-row, h2
+            max-width: 51%
+        h2
+            max-width: 40%
+
+        &-title
+            align-items: flex-start
+
+        &__bg
+            height: 37%
+            position: absolute
+            bottom: 0
+            right: 0
+            z-index: -1
+
+        &-item
+            font-size: 16px
+            width: 32%
+            span
+                min-height: unset
+                padding: 23px 70px 23px 24px
+
+            img
+                height: 172px
+
+        @media screen and ( max-width: 708px )
+            .container
+                padding: 32px 24px 68vw
+                display: block
+
+            &-title
+                display: block
+
+            h2, &-row 
+                width: 100%
+                max-width: 100%
+
+            h2
+                margin-bottom: 20px
+
+            &__text
+                margin-bottom: 20px
+
+            &-items
+                position: relative
+                width: 100vw !important
+                left: -24px
+                padding: 24px
+                flex-wrap: nowrap
+                overflow-y: scroll
+                gap: 21px
+
+            &-item
+                min-width: 285px
+                width: 285px
+                span
+                    &::after
+                        right: 20px
+                        top: 18px
+
+            &__bg
+                width: 100%
+                height: 65vw
+                max-width: 100%
 
 .app
     background-color: white
@@ -67,18 +412,23 @@
         .container
             align-items: stretch
 
+        h2
+            margin-bottom: 16px
+
         &-box
             width: 40%
             padding: 28px 29px
             overflow: hidden
             &__text
+                margin: 0 0 auto
                 font-size: 16px
-                max-width: 66%
+                max-width: 100%
 
         &__bg
             bottom: 0
-            right: -92px
+            right: 0
             width: 100%
+            height: 60%
 
         .col
             width: 55%
@@ -109,12 +459,14 @@
             margin-bottom: 46px
             &__text
                 text-transform: none
+                margin: auto 0 0
 
         &__text
             margin-bottom: 30px
 
         &__bg
             width: 92%
+            height: 85%
             bottom: 0
             right: -50px
 
@@ -394,4 +746,5 @@
                 top: 46px
                 left: -25px
 
+// @import 'modal'
 @import 'footer'

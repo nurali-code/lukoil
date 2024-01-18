@@ -30,6 +30,8 @@ body
     width: 100%
     margin: 0 auto
     padding: 0 24px
+    position: relative
+    z-index: 1
 
 h1,.h1
     font-size: 24px
@@ -46,10 +48,11 @@ h2,.h2
     margin: 0 0 30px
 
 section
-    padding: 35px 0
+    padding: 60px 0
 
 p
     font-size: 18px
+    leading-trim: both
     line-height: 130%
 
 img
@@ -221,6 +224,14 @@ ul
             &::before
                 background-image: url('../img/check.svg')
 
+.list
+    li
+        padding-left: 44px
+        background-repeat: no-repeat
+        background-position: top left
+        background-image: url('../img/list.svg')
+        margin-bottom: 16px
+
 @media screen and (max-width: 998px)
     .container
         max-width: 786px
@@ -230,3 +241,10 @@ ul
 
     input, select
         font-size: 14px
+
+@media screen and (max-width: 700px)
+    section
+        padding: 35px 0
+
+    .list li
+        padding-left: 36px
