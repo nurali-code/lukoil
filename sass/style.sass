@@ -6,6 +6,155 @@
 
 .hero
 
+.saving
+    &-title
+        margin-bottom: 34px
+        h2, p
+            width: 48%
+
+    &__textline
+        font-size: 16px
+
+    &__descr
+        font-size: 18px
+        color: #8792A4
+
+    &-items
+        justify-content: flex-start
+        gap: 22px 2%
+        position: relative
+        align-items: stretch
+        padding-right: 200px
+
+    &-item
+        border-radius: 20px
+        background: white
+        display: flex
+        flex-direction: column
+        padding: 24px 30px
+        // width: 32%
+        width: 387px
+        min-height: 250px
+        position: relative
+        z-index: 1
+        overflow: hidden
+        &:first-child
+            padding: 40px 30px
+            background-color: $prime
+            color: white
+
+            .saving__text
+                font-size: 16px
+
+            .saving__img
+                height: 60%
+                width: 60%
+                bottom: 0
+                right: 0
+                object-position: right bottom
+
+            .saving__save, mark
+                color: white
+
+            @media screen and ( min-width: 1248px )
+                position: absolute
+                top: 0
+                right: 0
+                height: 100%
+
+    &__heading
+        font-size: 18px
+        font-weight: 700
+        line-height: 130%
+        margin: 0 0 10px
+        display: block
+
+    &__text
+        font-size: 14px
+        display: block
+        font-weight: 400
+        line-height: 130%
+        text-transform: lowercase
+        &::first-letter
+            text-transform: uppercase
+
+    &__img
+        position: absolute
+        bottom: 20px
+        right: 20px
+        width: 100px
+        height: 100px
+        object-fit: contain
+        z-index: -1
+
+    &__save
+        font-size: 32px
+        font-weight: 400
+        line-height: 130%
+        color: $prime
+        margin-top: auto
+        mark
+            font-size: 69px
+
+    @media screen and ( max-width: 1248px )
+        &-items
+            padding: 0
+            justify-content: space-between
+        &-item
+            width: 49%
+            &:first-child
+                padding-right: 300px
+                width: 100%
+                min-height: 300px
+                .saving__img
+                    height: 95%
+
+    @media screen and ( max-width: 998px )
+        &-item
+            &:first-child
+                padding-right: 200px
+                .saving__img
+                    height: 80%
+
+
+
+
+    @media screen and ( max-width: 700px )
+        h2
+            margin-bottom: 18px
+
+        &-title
+            margin-bottom: 14px
+            h2, p
+                width: 100%
+
+        &__textline
+            margin-bottom: 35px
+
+        &__text
+            margin-bottom: 64px
+
+        &-items
+            position: relative
+            width: 100vw !important
+            left: -24px
+            padding: 24px
+            flex-wrap: nowrap
+            overflow-y: scroll
+            gap: 8px
+
+        &-item,
+        &-item:first-child
+            width: calc( 100vw - 44px )
+            min-width: calc( 100vw - 44px )
+
+        &-item
+            padding: 30px 20px !important
+            &:first-child
+                padding-right: 200px
+                .saving__img
+                    height: 159px
+
 .pa
     padding: 60px 10px 0
     h2
@@ -23,7 +172,7 @@
     &__text
         font-size: 16px
         font-weight: 400
-        line-height: 129.5%
+        line-height: 130%
         margin: 0 0 46px
 
     ul
@@ -32,7 +181,7 @@
             padding-left: 33px
             font-size: 16px
             font-weight: 600
-            line-height: 129.5%
+            line-height: 130%
             width: 31%
             background-image: url('../img/list_dark.svg')
             &:first-child
@@ -108,7 +257,7 @@
 
     li
         font-weight: 400
-        line-height: 129.5%
+        line-height: 130%
         letter-spacing: -0.24px
 
     h2
@@ -374,7 +523,7 @@
     &__text
         font-size: 24px
         font-weight: 400
-        line-height: 129.5%
+        line-height: 130%
         margin: 0 0 40px
 
     .col
@@ -400,7 +549,7 @@
         gap: 15px
         font-size: 16px
         font-weight: 500
-        line-height: 129.5%
+        line-height: 130%
         img
             display: block
             width: 76px
@@ -510,7 +659,7 @@
     &__text
         width: 481px
         font-size: 18px
-        line-height: 129.5%
+        line-height: 130%
         margin: 5px auto 70px
 
     h2, .col
@@ -519,7 +668,7 @@
     &-item
         font-size: 16px
         font-weight: 400
-        line-height: 129.5%
+        line-height: 130%
         margin: 0 0 44px
         width: 46%
         img
@@ -621,7 +770,7 @@
     &__manager
         display: inline-block
         font-size: 16px
-        line-height: 129.5%
+        line-height: 130%
         background-color: rgba(255, 255, 255, 0.12)
         border: 1px solid rgba(255, 255, 255, 0.34)
         backdrop-filter: blur(4px)
@@ -672,7 +821,7 @@
         &__heading
             font-size: 18px
             font-weight: 400
-            line-height: 129.5%
+            line-height: 130%
             margin: 0 0 41px
 
         small
@@ -680,7 +829,7 @@
             display: block
             color: #8792A4
             font-weight: 400
-            line-height: 129.5%
+            line-height: 130%
 
     .btn
         width: 100%
