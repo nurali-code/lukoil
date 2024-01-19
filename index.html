@@ -9,6 +9,7 @@
     <meta name="theme-color" content="#DA2B36">
     <link rel="shortcut icon" href="favicon.svg" type="image/svg">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/aos.css">
 
 </head>
 
@@ -59,21 +60,25 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h1 class="h2">Лукойл: инновационные топливные карты для <mark>оптимизации работы вашего бизнеса</mark>
+                <h1 class="h2" data-aos="fade-up">Лукойл: инновационные топливные карты для <mark>оптимизации работы
+                        вашего бизнеса</mark>
                 </h1>
-                <p class="hero__text"><b>Сократите расходы</b> на содержание автомобильного парка <b>на 26-38%*</b> </p>
+                <p class="hero__text" data-aos="fade-up" data-aos-delay="100"><b>Сократите расходы</b> на содержание
+                    автомобильного парка <b>на 26-38%*</b> </p>
                 <picture>
                     <source srcset="img/cards.avif" type="image/avif">
                     <source srcset="img/cards.webp" type="image/webp">
-                    <img src="img/cards.png" class="hero__card" alt="cards">
+                    <img data-aos="fade-left" data-aos-delay="200" src="img/cards.png" class="hero__card" alt="cards">
                 </picture>
-                <button class="btn btn_phone">Заказать топливную карту Лукойл</button>
+                <button class="btn btn_phone" data-aos="fade-up" data-aos-delay="200">Заказать топливную карту
+                    Лукойл</button>
+
                 <p class="hero-footer fx">
-                    <span class="hero-item fx">
+                    <span class="hero-item fx" data-aos="fade-up" data-aos-delay="300">
                         <i>24/365</i>
                         Поддержка <br> в любое время
                     </span>
-                    <span class="hero-item fx">
+                    <span class="hero-item fx" data-aos="fade-up" data-aos-delay="400">
                         <i>4130+</i>
                         <span>заправок «ЛУКОЙЛ» и партнеров <br> в <b>России и других странах</b></span>
                     </span>
@@ -83,7 +88,7 @@
             <picture>
                 <source srcset="img/main_truck.avif" type="image/avif">
                 <source srcset="img/main_truck.webp" type="image/webp">
-                <img src="img/main_truck.png" class="hero__truck" alt="truck">
+                <img src="img/main_truck.png" data-aos="fade-left" data-aos-delay="400" class="hero__truck" alt="truck">
             </picture>
             <picture>
                 <source srcset="img/main.avif" type="image/avif">
@@ -94,15 +99,18 @@
 
         <section class="premium">
             <div class="container">
-                <h2><mark>Топливо премиум-класса</mark> по доступным ценам <mark>от лидеров индустрии</mark></h2>
-                <p>
+                <h2 data-aos="fade-up"><mark>Топливо премиум-класса</mark> по доступным ценам
+                    <mark>от лидеров индустрии</mark>
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="100">
                     Топливная карта ЛУКОЙЛ <b>позволяет покупать горючее, товары и услуги на брендовых заправках</b>
                     лидеров индустрии и на АЗС других, менее крупных компанийи
                 </p>
-                <p class="premium__descr">Мы всегда рядом, всегда по пути!</p>
+                <p data-aos="fade-up" data-aos-delay="200" class="premium__descr">Мы всегда рядом, всегда по пути!</p>
                 <picture>
                     <source srcset="img/app_1.avif" type="image/avif">
-                    <img class="premium__img" src="img/app_1.png" alt="premium" loading="lazy">
+                    <img data-aos="fade-left" data-aos-delay="300" class="premium__img" src="img/app_1.png"
+                        alt="premium" loading="lazy">
                 </picture>
             </div>
         </section>
@@ -110,16 +118,17 @@
         <section class="saving">
             <div class="container">
                 <div class="fx-wrp saving-title">
-                    <h2>ТОПЛИВНАЯ КАРТА ЛУКОЙЛ <mark>экономит до 38%</mark></h2>
-                    <p class="saving__textline">
+                    <h2 data-aos="fade-up">ТОПЛИВНАЯ КАРТА ЛУКОЙЛ <mark>экономит до 38%</mark></h2>
+                    <p class="saving__textline" data-aos="fade-up" data-aos-delay="100">
                         <b>Защита от воровства.</b> Топливная карта ЛУКОЙЛ является надежной защитой от краж. Отказ от
                         наличных и возможность отслеживать все транзакции онлайн позволяют легко контролировать
                         расходы и планировать платежи сотрудников — от водителей до руководителей отделов.
                     </p>
-                    <p class="saving__descr"><b>Экономия до 38%</b> на содержании автопарка</p>
+                    <p class="saving__descr" data-aos="fade-up" data-aos-delay="200"><b>Экономия до 38%</b> на
+                        содержании автопарка</p>
                 </div>
                 <div class="fx-wrp saving-items">
-                    <p class="saving-item">
+                    <p class="saving-item" data-aos="fade-left">
                         <span class="saving__heading">Полный пакет бухгалтерской отчетности</span>
                         <span class="saving__text">
                             Полный пакет бухгалтерской отчетности, включая УПД, счет-фактуру на топливо, товарную
@@ -132,12 +141,12 @@
                             <img class="saving__img" src="img/saving__bg.png" loading="lazy" alt="saving">
                         </picture>
                     </p>
-                    <p class="saving-item">
+                    <p class="saving-item" data-aos="fade-up" data-aos-delay="100">
                         <span class="saving__text">ОНЛАЙН-КОНТРОЛЬ, УПРАВЛЕНИЕ И ИНФОРМАЦИОННАЯ </span>
                         <span class="saving__save">до <mark>5%</mark></span>
                         <img class="saving__img" src="img/saving-1.svg" loading="lazy" alt="saving">
                     </p>
-                    <p class="saving-item">
+                    <p class="saving-item" data-aos="fade-up" data-aos-delay="200">
                         <span class="saving__text">
                             Информационное сопровождение - менеджеры круглосуточной службы поддержки готовы
                             консультировать вас по всем вопросам
@@ -145,7 +154,7 @@
                         <span class="saving__save">до <mark>1%</mark></span>
                         <img class="saving__img" src="img/saving-2.svg" loading="lazy" alt="saving">
                     </p>
-                    <p class="saving-item">
+                    <p class="saving-item" data-aos="fade-up" data-aos-delay="100">
                         <span class="saving__text">
                             Высококачественное топливо ЛУКОЙЛ соответствует мировым стандартам, снижая удельный расход
                             топлива и увеличивая срок службы двигателя
@@ -153,7 +162,7 @@
                         <span class="saving__save">до <mark>7%</mark></span>
                         <img class="saving__img" src="img/saving-3.svg" loading="lazy" alt="saving">
                     </p>
-                    <p class="saving-item">
+                    <p class="saving-item" data-aos="fade-up" data-aos-delay="200">
                         <span class="saving__text">
                             Обширная сеть заправок ЛУКОЙЛ и партнеров расположена удобно вдоль трасс, что позволяет
                             оптимизировать маршруты и экономить до 5% топлива
@@ -168,8 +177,8 @@
 
         <section class="pa">
             <div class="container">
-                <h2>личный кабинет: просто отчитываться</h2>
-                <p class="pa__text">
+                <h2 data-aos="fade-up">личный кабинет: просто отчитываться</h2>
+                <p data-aos="fade-up" data-aos-delay="100" class="pa__text">
                     Удобный электронный документооборот позволяет <b>получать первичную бухгалтерскую документацию</b>
                     и формировать аналитические отчеты.
                     <br>
@@ -178,13 +187,13 @@
                     требуют дублирования на бумаге.
                 </p>
                 <ul class="list fx-wrp">
-                    <li>Минимизирует ошибки</li>
-                    <li>Упрощает контроль за документами</li>
-                    <li>Экономит деньги и время</li>
+                    <li data-aos="fade-up">Минимизирует ошибки</li>
+                    <li data-aos="fade-up" data-aos-delay="100">Упрощает контроль за документами</li>
+                    <li data-aos="fade-up" data-aos-delay="200">Экономит деньги и время</li>
                 </ul>
                 <picture>
                     <source srcset="img/pa-img.webp" type="image/webp">
-                    <img src="img/pa-img.png" class="pa__img" loading="lazy" alt="личный кабинет">
+                    <img data-aos="fade-left" src="img/pa-img.png" class="pa__img" loading="lazy" alt="личный кабинет">
                 </picture>
             </div>
         </section>
@@ -193,49 +202,52 @@
             <div class="container fx-wrp">
                 <div class="col">
                     <div class="manage-header">
-                        <h2>Удобно управлять</h2>
+                        <h2 data-aos="fade-up">Удобно управлять</h2>
                         <ul class="list">
-                            <li>Управление договором и картами в 3 клика</li>
-                            <li>Возможность создавать оптимальные графики платежей</li>
+                            <li data-aos="fade-up" data-aos-delay="">Управление договором и картами в 3 клика</li>
+                            <li data-aos="fade-up" data-aos-delay="100">Возможность создавать оптимальные графики
+                                платежей</li>
                         </ul>
                     </div>
                     <ul class="list manage-bottom">
-                        <li>Комплексная аналитика расходов, позволяющая контролировать виды закупаемого горючего и
+                        <li data-aos="fade-up" data-aos-delay="100">Комплексная аналитика расходов, позволяющая
+                            контролировать виды закупаемого горючего и
                             затраты по дням недели</li>
-                        <li>Один счет-фактура за все заправки, услуги и сопутствующие товары</li>
-                        <li>Обмен данными с учетными системами компании</li>
-                        <li>Информация о платежах и балансе в режиме реального времени</li>
+                        <li data-aos="fade-up" data-aos-delay="100">Один счет-фактура за все заправки, услуги и
+                            сопутствующие товары</li>
+                        <li data-aos="fade-up" data-aos-delay="100">Обмен данными с учетными системами компании</li>
+                        <li data-aos="fade-up" data-aos-delay="100">Информация о платежах и балансе в режиме реального
+                            времени</li>
                     </ul>
-
                 </div>
-                <img src="img/manage-img.jpg" class="manage__img" loading="lazy" alt="manage">
+                <img data-aos="fade-right" src="img/manage-img.jpg" class="manage__img" loading="lazy" alt="manage">
             </div>
         </section>
 
         <section class="control">
             <div class="container fx-wrp">
-                <h2>Легко контролировать</h2>
-                <p class="fx">
+                <h2 data-aos="fade-up">Легко контролировать</h2>
+                <p class="fx" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/cont-1.svg" alt="Легко контролировать">
                     Анализ расхода топлива по каждому водителю и автомобилю
                 </p>
-                <p class="fx">
+                <p class="fx" data-aos="fade-up" data-aos-delay="200">
                     <img src="img/cont-2.svg" alt="Легко контролировать">
                     Мгновенные оповещения о сомнительных операциях по топливным картам
                 </p>
-                <p class="fx">
+                <p class="fx" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/cont-3.svg" alt="Легко контролировать">
                     Простая блокировка карты при необходимости
                 </p>
-                <p class="fx">
+                <p class="fx" data-aos="fade-up" data-aos-delay="200">
                     <img src="img/cont-4.svg" alt="Легко контролировать">
                     Контроль географии заправок
                 </p>
-                <p class="fx">
+                <p class="fx" data-aos="fade-up" data-aos-delay="300">
                     <img src="img/cont-5.svg" alt="Легко контролировать">
                     Просмотр транзакций в режиме онлайн
                 </p>
-                <p class="fx">
+                <p class="fx" data-aos="fade-up" data-aos-delay="400">
                     <img src="img/cont-6.svg" alt="Легко контролировать">
                     Установка и изменение лимитов и маршрутов
                 </p>
@@ -245,12 +257,12 @@
         <section class="possibility">
             <div class="container fx-wrp">
                 <div class="col possibility-title fx">
-                    <h2>ВОЗМОЖНОСТИ ТОПЛИВНОЙ КАРТЫ ЛУКОЙЛ</h2>
+                    <h2 data-aos="fade-up">ВОЗМОЖНОСТИ ТОПЛИВНОЙ КАРТЫ ЛУКОЙЛ</h2>
                     <div class="possibility-row">
-                        <p class="possibility__subtext">
+                        <p class="possibility__subtext" data-aos="fade-up" data-aos-delay="100">
                             Дорожные сервисы для грузового и легкового транспортая
                         </p>
-                        <p class="possibility__text">
+                        <p class="possibility__text" data-aos="fade-up" data-aos-delay="200">
                             До 8,3% от розничных цен поставщика при возмещении НДС! Оплачивайте со скидкой не только
                             топливо
                             и ГСМ:
@@ -258,24 +270,25 @@
                     </div>
                     <picture>
                         <source srcset="img/cards-2.webp" type="image/webp">
-                        <img class="possibility__bg" src="img/cards-2.png" loading="lazy" alt="МОБИЛЬНОЕ ПРИЛОЖЕНИЕ">
+                        <img class="possibility__bg" src="img/cards-2.png" data-aos="fade-up" data-aos-delay="300"
+                            loading="lazy" alt="МОБИЛЬНОЕ ПРИЛОЖЕНИЕ">
                     </picture>
                 </div>
 
                 <div class="col fx-wrp possibility-items">
-                    <p class="possibility-item">
+                    <p class="possibility-item" data-aos="fade-left">
                         <span>Мойки</span>
                         <img loading="lazy" src="img/poss-1.jpg" alt="Мойки">
                     </p>
-                    <p class="possibility-item">
+                    <p class="possibility-item" data-aos="fade-left" data-aos-delay="100">
                         <span>Автосервис</span>
                         <img loading="lazy" src="img/poss-2.jpg" alt="Автосервис">
                     </p>
-                    <p class="possibility-item">
+                    <p class="possibility-item" data-aos="fade-left" data-aos-delay="200">
                         <span>Шиномонтаж</span>
                         <img loading="lazy" src="img/poss-3.jpg" alt="Шиномонтаж">
                     </p>
-                    <p class="possibility-item">
+                    <p class="possibility-item" data-aos="fade-left" data-aos-delay="300">
                         <span>Сопутствующие товары</span>
                         <img loading="lazy" src="img/poss-4.jpg" alt="Сопутствующие товары">
                     </p>
@@ -285,33 +298,35 @@
 
         <section class="app">
             <div class="container fx">
-                <div class="app-box fx">
-                    <h2>УДОБНОЕ <mark>МОБИЛЬНОЕ</mark> ПРИЛОЖЕНИЕ</h2>
-                    <p class="app-box__text">Тaкже виртуальная <br> топливная карта лукойл</p>
+                <div class="app-box fx" data-aos="fade-up">
+                    <h2 data-aos="fade-up">УДОБНОЕ <mark>МОБИЛЬНОЕ</mark> ПРИЛОЖЕНИЕ</h2>
+                    <p class="app-box__text" data-aos="fade-up" data-aos-delay="200">Тaкже виртуальная <br> топливная
+                        карта лукойл</p>
                     <picture>
                         <source srcset="img/app__bg.webp" type="image/webp">
-                        <img class="app__bg" src="img/app__bg.png" loading="lazy" alt="МОБИЛЬНОЕ ПРИЛОЖЕНИЕ">
+                        <img data-aos="fade-left" data-aos-delay="100" class="app__bg" src="img/app__bg.png"
+                            loading="lazy" alt="МОБИЛЬНОЕ ПРИЛОЖЕНИЕ">
                     </picture>
                 </div>
                 <div class="col">
-                    <p class="app__text">
+                    <p class="app__text" data-aos="fade-up">
                         Получите дополнительную скидку при использовании мобильного приложения и расчете виртуальной
                         картой
                     </p>
                     <div class="fx-wrp app-items">
-                        <p class="app-item fx">
+                        <p class="app-item fx" data-aos="fade-up" data-aos-delay="100">
                             <img src="img/app_img-1.png" alt="img" loading="lazy">
                             Оплачивайте <br> горючее и товары
                         </p>
-                        <p class="app-item fx">
+                        <p class="app-item fx" data-aos="fade-up" data-aos-delay="200">
                             <img src="img/app_img-2.png" alt="img" loading="lazy">
                             Отслеживайте <br> лимиты
                         </p>
-                        <p class="app-item fx">
+                        <p class="app-item fx" data-aos="fade-up" data-aos-delay="300">
                             <img src="img/app_img-3.png" alt="img" loading="lazy">
                             Дополнительные <br> скидки
                         </p>
-                        <p class="app-item fx">
+                        <p class="app-item fx" data-aos="fade-up" data-aos-delay="400">
                             <img src="img/app_img-4.png" alt="img" loading="lazy">
                             Стройте маршруты <br> к ближайшей заправке
                         </p>
@@ -323,33 +338,35 @@
 
         <section class="online">
             <div class="container fx-wrp">
-                <h2>мы всегда на связи</h2>
-                <p class="online__text">
+                <h2 data-aos="fade-up">мы всегда на связи</h2>
+                <p class="online__text" data-aos="fade-left" data-aos-delay="100">
                     <b>Круглосуточные консультации и поддержка на дорогах</b> для держателей топливных карт и
                     водителей.
                 </p>
                 <div class="col fx-wrp">
-                    <p class="online-item">
+                    <p class="online-item" data-aos="fade-up" data-aos-delay="200">
                         <img loading="lazy" src="img/on-1.svg" alt="on">
                         Помощь при блокировке <br> или утере карты
                     </p>
-                    <p class="online-item">
+                    <p class="online-item" data-aos="fade-up" data-aos-delay="300">
                         <img loading="lazy" src="img/on-2.svg" alt="on">
                         Анализ расходов <br> и операций по карте
                     </p>
-                    <p class="online-item">
+                    <p class="online-item" data-aos="fade-up" data-aos-delay="400">
                         <img loading="lazy" src="img/on-3.svg" alt="on">
                         Консультации для водителей <br> и держателей карт
                     </p>
-                    <p class="online-item">
+                    <p class="online-item" data-aos="fade-up" data-aos-delay="500">
                         <img loading="lazy" src="img/on-4.svg" alt="on">
                         Подбор <br> ближайшей АЗС
                     </p>
                 </div>
-                <div class="online-card">
-                    <p>Свяжитесь с нами — мы поможем подобрать <b>самый выгодный вариант</b>, с учетом особенностей
+                <div class="online-card" data-aos="fade-up" data-aos-delay="100">
+                    <p data-aos="fade-up" data-aos-delay="100">Свяжитесь с нами — мы поможем подобрать <b>самый выгодный
+                            вариант</b>, с учетом особенностей
                         вашего бизнеса</p>
-                    <a href="#" class="btn btn_card">Заказать топливную карту</a>
+                    <a data-aos="fade-up" data-aos-delay="200" href="#" class="btn btn_card">Заказать топливную
+                        карту</a>
                 </div>
             </div>
         </section>
@@ -357,17 +374,18 @@
         <section class="ask">
             <div class="container fx">
                 <div class="col">
-                    <h2>Остались вопросы?</h2>
-                    <p>Звоните, пишите, не стесняйтесь!</p>
-                    <div class="ask__manager">
+                    <h2 data-aos="fade-up">Остались вопросы?</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">Звоните, пишите, не стесняйтесь!</p>
+                    <div class="ask__manager" data-aos="fade-up" data-aos-delay="200">
                         <b>Алина</b>
                         <span><i>клиентский</i> менеджер</span>
                     </div>
                 </div>
-                <div class="ask-form">
-                    <h3 class="ask-form__heading">Наши менеджеры будут <b>рады <br> подробно ответить</b> на них.</h3>
-                    <small>Введите телефон</small>
-                    <form action="#">
+                <div class="ask-form" data-aos="fade-up" data-aos-delay="100">
+                    <h3 data-aos="fade-up" data-aos-delay="200" class="ask-form__heading">Наши менеджеры будут <b>рады
+                            <br> подробно ответить</b> на них.</h3>
+                    <small data-aos="fade-up" data-aos-delay="300">Введите телефон</small>
+                    <form data-aos="fade-up" data-aos-delay="300" action="#">
                         <div class="inp-phone">
                             <input type="tel" required placeholder="+7 (___) ___–__–__" name="phone" inputmode="text">
                         </div>
@@ -418,10 +436,13 @@
         </div>
     </footer>
 
+    <script src="./js/aos.js"></script>
+
     <script>
+        AOS.init();
+
         var btnMenu = document.getElementById('btnMenu'),
             header = document.getElementById('header');
-
         btnMenu.onclick = () => {
             header.classList.toggle('menu_open');
             btnMenu.classList.toggle('is_active');
