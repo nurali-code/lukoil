@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <nav class="header-top">
                 <ul class="fx">
@@ -50,7 +50,7 @@
                 <div class="header-btns fx">
                     <a href="#" target="_blank" class="btn_circ btn_lk"><img src="img/user.svg" alt="user"></a>
                     <a href="#" class="btn_circ header-ctr">Заключить договор</a>
-                    <button class="btn_menu"><span></span></button>
+                    <button class="btn_menu" id="btnMenu" title="Меню"><span></span></button>
                 </div>
             </nav>
         </div>
@@ -64,7 +64,7 @@
                 <p class="hero__text"><b>Сократите расходы</b> на содержание автомобильного парка <b>на 26-38%*</b> </p>
                 <picture>
                     <source srcset="img/cards.avif" type="image/avif">
-                    <source srcset="img/cards.webp" type="image/webp"> 
+                    <source srcset="img/cards.webp" type="image/webp">
                     <img src="img/cards.png" class="hero__card" alt="cards">
                 </picture>
                 <button class="btn btn_phone">Заказать топливную карту Лукойл</button>
@@ -79,7 +79,7 @@
                     </span>
                 </p>
             </div>
-            
+
             <picture>
                 <source srcset="img/main_truck.avif" type="image/avif">
                 <source srcset="img/main_truck.webp" type="image/webp">
@@ -417,6 +417,17 @@
 
         </div>
     </footer>
+
+    <script>
+        var btnMenu = document.getElementById('btnMenu'),
+            header = document.getElementById('header');
+
+        btnMenu.onclick = () => {
+            header.classList.toggle('menu_open');
+            btnMenu.classList.toggle('is_active');
+        };
+
+    </script>
 
 </body>
 
