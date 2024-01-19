@@ -7,6 +7,84 @@
 .hero
     display: none
 
+.premium
+    padding-right: 8px
+    padding-left: 8px
+
+    h2
+        max-width: 50%
+
+    p
+        max-width: 40%
+        font-feature-settings: 'ss01' on
+
+    .container
+        overflow: hidden
+        background-color: white
+        border-radius: 30px
+        background-repeat: no-repeat
+        background-position: right 30px center
+
+    &__descr
+        margin-top: 130px
+
+    @media screen and ( min-width: 710px )
+        .container
+            padding: 48px
+            background-image: url('../img/premium__bg.jpg')
+            background-size: 60% auto
+
+        &__img
+            position: absolute
+            height: 95%
+            width: 50%
+            bottom: 0
+            right: -10%
+            object-fit: contain
+            object-position: bottom right
+
+    @media screen and ( max-width: 1278px )
+        h2
+            max-width: 62%
+            margin-bottom: 20px
+
+        p
+            font-size: 16px
+
+        &__descr
+            margin-top: 90px
+
+    @media screen and ( max-width: 998px )
+        .container
+            padding: 30px
+            background-size: 56% auto
+
+        h2
+            max-width: 52%
+
+        p
+            max-width: 45%
+
+        &__descr
+            margin-top: 40px
+
+    @media screen and ( max-width: 710px )
+        .container
+            background-position: center bottom calc( 50vw - 44px )
+            background-image: url('../img/premium__bg-mob.jpg')
+            background-size: 100% auto
+            padding: 31px 16px 0
+        h2, p
+            max-width: 100%
+
+        &__descr
+            margin-top: 35px
+
+        &__img
+            display: block
+            transform: scale(1.07)
+            margin-top: calc( 65vw - 44px )
+
 .saving
     &-title
         margin-bottom: 34px
@@ -116,9 +194,6 @@
                 padding-right: 200px
                 .saving__img
                     height: 80%
-
-
-
 
     @media screen and ( max-width: 700px )
         h2
@@ -348,9 +423,6 @@
         z-index: 1
         padding: 87px 24px 0
 
-    .col
-        width: 48%
-
     h2
         margin-bottom: 32px
 
@@ -366,6 +438,7 @@
         max-width: 90%
 
     &-items
+        width: 49%
         gap: 20px 4%
         align-items: stretch
 
@@ -381,23 +454,10 @@
             position: relative
             z-index: 1
             min-height: 95px
-            &::after
-                content: ''
-                position: absolute
-                width: 30px
-                height: 30px
-                border-radius: 50%
-                right: 24px
-                top: 22px
-                display: flex
-                align-items: center
-                justify-content: center
-                background-color: $prime_light
-                transition: .3s
-                background-repeat: no-repeat
-                background-position: center center
-                background-size: 50% auto
-                background-image: url('../img/check.svg')
+            background-repeat: no-repeat
+            background-position: top 22px right 24px
+            background-size: 30px auto
+            background-image: url("../img/list.svg")
 
         img
             display: block
@@ -407,6 +467,7 @@
 
     &-title
         @media screen and ( min-width: 998px )
+            width: 48%
             flex-direction: column
             align-items: flex-start
 
@@ -421,6 +482,7 @@
         background: linear-gradient(103deg, #33373A 26.05%, #1D2022 67.06%)
         .container
             padding-bottom: 100px
+
         .col
             width: 100%
 
@@ -434,11 +496,12 @@
             max-width: 100%
 
         &-items
-            gap: 1.5%
+            gap: 20px 1.5%
             width: 100%
 
         &-row, h2
             max-width: 51%
+
         h2
             max-width: 40%
 
@@ -462,45 +525,43 @@
             img
                 height: 172px
 
-        @media screen and ( max-width: 708px )
-            .container
-                padding: 32px 24px 68vw
-                display: block
+    @media screen and ( max-width: 708px )
+        .container
+            padding: 32px 24px 68vw
+            display: block
 
-            &-title
-                display: block
+        &-title
+            display: block
 
-            h2, &-row 
-                width: 100%
-                max-width: 100%
+        h2, &-row 
+            width: 100%
+            max-width: 100%
 
-            h2
-                margin-bottom: 20px
+        h2
+            margin-bottom: 20px
 
-            &__text
-                margin-bottom: 20px
+        &__text
+            margin-bottom: 20px
 
-            &-items
-                position: relative
-                width: 100vw !important
-                left: -24px
-                padding: 24px
-                flex-wrap: nowrap
-                overflow-y: scroll
-                gap: 21px
+        &-items
+            position: relative
+            width: 100vw !important
+            left: -24px
+            padding: 24px
+            flex-wrap: nowrap
+            overflow-y: scroll
+            gap: 21px
 
-            &-item
-                min-width: 285px
-                width: 285px
-                span
-                    &::after
-                        right: 20px
-                        top: 18px
+        &-item
+            min-width: 285px
+            width: 285px
+            span
+                background-position: top 18px right 18px
 
-            &__bg
-                width: 100%
-                height: 65vw
-                max-width: 100%
+        &__bg
+            width: 100%
+            height: 65vw
+            max-width: 100%
 
 .app
     background-color: white
