@@ -42,6 +42,7 @@ h2,.h2
     margin: 0 0 30px
 
 section
+    overflow: hidden
     padding: 60px 0
 
 p
@@ -69,6 +70,7 @@ mark
     color: $prime
 
 .btn
+    font-feature-settings: "ss01" on
     display: inline-block
     padding: 24px 107px 24px 37px
     font-size: 16px
@@ -81,7 +83,7 @@ mark
     z-index: 1
     text-align: left
     overflow: hidden
-    &:after
+    &::after
         content: url(../img/arrow_45.svg)
         position: absolute
         right: 32px
@@ -97,10 +99,10 @@ mark
         left: 0
         top: 0
         width: 100%
-        height: 0
+        height: 100%
         transition: transform .3s
-        opacity: .3
-        border-top: 73px solid #fff
+        opacity: .15
+        border-top: 73px solid white
         border-right: 100px solid transparent
         transform: translateX(-100%)
         filter: blur(10px)
@@ -124,7 +126,7 @@ mark
         color: $prime
         img
             display: block
-        
+
         &:hover
             box-shadow: 0 0 0 2px rgba($prime, .4)
 
